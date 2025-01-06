@@ -49,3 +49,70 @@ cp .env.example .env
 ```bash
 pnpm i && pnpm start
 ```
+
+
+```
+eliza-starter
+├─ characters
+│  ├─ eliza.character.json
+│  ├─ tate.character.json
+│  └─ trump.character.json
+├─ client
+│  ├─ .gitignore
+│  ├─ .turbo
+│  │  └─ turbo-build.log
+│  ├─ components.json
+│  ├─ dist
+│  │  ├─ assets
+│  │  │  ├─ index-C5G8T_UT.css
+│  │  │  └─ index-DgPB3tLP.js
+│  │  ├─ index.html
+│  │  └─ vite.svg
+│  ├─ eslint.config.js
+│  ├─ index.html
+│  ├─ package.json
+│  ├─ postcss.config.js
+│  ├─ public
+│  │  └─ vite.svg
+│  ├─ src
+│  │  ├─ App.css
+│  │  ├─ assets
+│  │  │  └─ react.svg
+│  │  ├─ components
+│  │  │  └─ ui
+│  │  ├─ hooks
+│  │  ├─ index.css
+│  │  └─ lib
+│  ├─ tailwind.config.js
+│  ├─ tsconfig.app.json
+│  ├─ tsconfig.json
+│  └─ tsconfig.node.json
+├─ content_cache
+├─ data
+├─ package.json
+├─ packages
+│  └─ plugin-evm
+│     ├─ .turbo
+│     │  └─ turbo-build.log
+│     ├─ README.md
+│     ├─ dist
+│     │  ├─ index.js
+│     │  └─ index.js.map
+│     ├─ eslint.config.mjs
+│     ├─ package.json
+│     ├─ src
+│     │  ├─ actions
+│     │  ├─ providers
+│     │  ├─ templates
+│     │  ├─ tests
+│     │  └─ types
+│     └─ tsconfig.json
+├─ pnpm-lock.yaml
+├─ pnpm-workspace.yaml
+├─ scripts
+│  └─ clean.sh
+├─ src
+├─ tsconfig.json
+└─ turbo.json
+
+```
