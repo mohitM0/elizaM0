@@ -53,12 +53,18 @@ importers:
       '@elizaos/adapter-redis':
         specifier: ^0.1.7
         version: 0.1.7(@google-cloud/vertexai@1.9.2)(@langchain/core@0.3.27(openai@4.73.0(zod@3.23.8)))(axios@1.7.9)(react@18.3.1)(sswr@2.1.0(svelte@5.16.2))(svelte@5.16.2)(vue@3.5.13(typescript@5.7.2))(whatwg-url@14.1.0)
+      '@tavily/core':
+        specifier: ^0.0.2
+        version: 0.0.2
       better-sqlite3:
         specifier: ^11.7.2
         version: 11.7.2
       readline:
         specifier: ^1.3.0
         version: 1.3.0
+      ts-node:
+        specifier: ^10.9.2
+        version: 10.9.2(@swc/core@1.10.4(@swc/helpers@0.5.15))(@types/node@22.8.4)(typescript@5.7.2)
       ws:
         specifier: ^8.18.0
         version: 8.18.0(bufferutil@4.0.9)(utf-8-validate@5.0.10)
@@ -66,9 +72,6 @@ importers:
         specifier: 17.7.2
         version: 17.7.2
     devDependencies:
-      ts-node:
-        specifier: 10.9.2
-        version: 10.9.2(@swc/core@1.10.4(@swc/helpers@0.5.15))(@types/node@22.8.4)(typescript@5.7.2)
       tsup:
         specifier: ^8.3.5
         version: 8.3.5(@swc/core@1.10.4(@swc/helpers@0.5.15))(jiti@1.21.7)(postcss@8.4.49)(typescript@5.7.2)(yaml@2.7.0)
@@ -186,13 +189,13 @@ importers:
     dependencies:
       '@elizaos/core':
         specifier: 0.1.7-alpha.2
-        version: 0.1.7-alpha.2(@google-cloud/vertexai@1.9.2)(@langchain/core@0.3.27(openai@4.77.3(zod@3.24.1)))(axios@1.7.9)(react@18.3.1)(sswr@2.1.0(svelte@5.16.2))(svelte@5.16.2)(vue@3.5.13(typescript@5.7.2))
+        version: 0.1.7-alpha.2(@google-cloud/vertexai@1.9.2)(@langchain/core@0.3.27(openai@4.77.3(zod@3.23.8)))(axios@1.7.9)(react@18.3.1)(sswr@2.1.0(svelte@5.16.2))(svelte@5.16.2)(vue@3.5.13(typescript@5.7.2))
       '@lifi/data-types':
         specifier: 5.15.5
         version: 5.15.5
       '@lifi/sdk':
         specifier: 3.4.1
-        version: 3.4.1(@solana/wallet-adapter-base@0.9.23(@solana/web3.js@1.95.8(bufferutil@4.0.9)(utf-8-validate@5.0.10)))(@solana/web3.js@1.95.8(bufferutil@4.0.9)(utf-8-validate@5.0.10))(typescript@5.7.2)(viem@2.21.53(bufferutil@4.0.9)(typescript@5.7.2)(utf-8-validate@5.0.10)(zod@3.24.1))
+        version: 3.4.1(@solana/wallet-adapter-base@0.9.23(@solana/web3.js@1.95.8(bufferutil@4.0.9)(utf-8-validate@5.0.10)))(@solana/web3.js@1.95.8(bufferutil@4.0.9)(utf-8-validate@5.0.10))(typescript@5.7.2)(viem@2.21.53(bufferutil@4.0.9)(typescript@5.7.2)(utf-8-validate@5.0.10)(zod@3.23.8))
       '@lifi/types':
         specifier: 16.3.0
         version: 16.3.0
@@ -201,7 +204,7 @@ importers:
         version: 8.3.5(@swc/core@1.10.4(@swc/helpers@0.5.15))(jiti@1.21.7)(postcss@8.4.49)(typescript@5.7.2)(yaml@2.7.0)
       viem:
         specifier: 2.21.53
-        version: 2.21.53(bufferutil@4.0.9)(typescript@5.7.2)(utf-8-validate@5.0.10)(zod@3.24.1)
+        version: 2.21.53(bufferutil@4.0.9)(typescript@5.7.2)(utf-8-validate@5.0.10)(zod@3.23.8)
       whatwg-url:
         specifier: 7.1.0
         version: 7.1.0
@@ -2675,6 +2678,9 @@ packages:
     peerDependencies:
       react: ^18 || ^19
 
+  '@tavily/core@0.0.2':
+    resolution: {integrity: sha512-UabYbp57bdjEloA4efW9zTSzv+FZp13JVDHcfutUNR5XUZ+aDGupe2wpfABECnD+b7Ojp9v9zguZcm1o+h0//w==}
+
   '@telegraf/types@7.1.0':
     resolution: {integrity: sha512-kGevOIbpMcIlCDeorKGpwZmdH7kHbqlk/Yj6dEpJMKEQw5lk0KVQY0OLXaCswy8GqlIVLd5625OB+rAntP9xVw==}
 
@@ -2778,8 +2784,8 @@ packages:
   '@types/node@12.20.55':
     resolution: {integrity: sha512-J8xLz7q2OFulZ2cyGTLE1TbbZcjpno7FaN6zdJNrgAdrJ+DZzh/uFR6YrTb4C+nXakvud8Q4+rbhoIWlYQbUFQ==}
 
-  '@types/node@18.19.69':
-    resolution: {integrity: sha512-ECPdY1nlaiO/Y6GUnwgtAAhLNaQ53AyIVz+eILxpEo5OvuqE6yWkqWBIb5dU0DqhKQtMeny+FBD3PK6lm7L5xQ==}
+  '@types/node@18.19.70':
+    resolution: {integrity: sha512-RE+K0+KZoEpDUbGGctnGdkrLFwi1eYKTlIHNl2Um98mUkGsm1u2Ff6Ltd0e8DktTtC98uy7rSj+hO8t/QuLoVQ==}
 
   '@types/node@22.7.5':
     resolution: {integrity: sha512-jML7s2NAzMWc//QSJ1a3prpk78cOPchGvXJsC3C6R6PSMoooztvRVQEz89gmBTBY1SPMaqo5teB4uNHPdetShQ==}
@@ -6865,14 +6871,14 @@ packages:
     resolution: {integrity: sha512-n1cw8k1k0x4pgA2+9XrOkFydTerNcJ1zWCO5Nn9scWHTD+5tp8dghT2x1uduQePZTZgd3Tupf+x9BxJjeJi77Q==}
     engines: {node: '>=14.0.0'}
 
-  tldts-core@6.1.70:
-    resolution: {integrity: sha512-RNnIXDB1FD4T9cpQRErEqw6ZpjLlGdMOitdV+0xtbsnwr4YFka1zpc7D4KD+aAn8oSG5JyFrdasZTE04qDE9Yg==}
+  tldts-core@6.1.71:
+    resolution: {integrity: sha512-LRbChn2YRpic1KxY+ldL1pGXN/oVvKfCVufwfVzEQdFYNo39uF7AJa/WXdo+gYO7PTvdfkCPCed6Hkvz/kR7jg==}
 
-  tldts-experimental@6.1.70:
-    resolution: {integrity: sha512-cEhsyUBfW/elb1FpPAfnqqTa0Av9OJlcG9Nabiuqn8/1Xggpqch7H8QfZA55SNHonj1x1uRB/NzRETvCiQqz5Q==}
+  tldts-experimental@6.1.71:
+    resolution: {integrity: sha512-78lfP/3fRJ3HoCT5JSLOLj5ElHiWCAyglYNzjkFqBO7ykLZYst2u2jM1igSHWV0J2GFfOplApeDsfTF+XACrlA==}
 
-  tldts@6.1.70:
-    resolution: {integrity: sha512-/W1YVgYVJd9ZDjey5NXadNh0mJXkiUMUue9Zebd0vpdo1sU+H4zFFTaJ1RKD4N6KFoHfcXy6l+Vu7bh+bdWCzA==}
+  tldts@6.1.71:
+    resolution: {integrity: sha512-LQIHmHnuzfZgZWAf2HzL83TIIrD8NhhI0DVxqo9/FdOd4ilec+NTNZOlDZf7EwrTNoutccbsHjvWHYXLAtvxjw==}
     hasBin: true
 
   to-regex-range@5.0.1:
@@ -8414,7 +8420,7 @@ snapshots:
 
   '@anthropic-ai/sdk@0.30.1':
     dependencies:
-      '@types/node': 18.19.69
+      '@types/node': 18.19.70
       '@types/node-fetch': 2.6.12
       abort-controller: 3.0.0
       agentkeepalive: 4.6.0
@@ -9222,13 +9228,13 @@ snapshots:
       '@babel/helper-string-parser': 7.25.9
       '@babel/helper-validator-identifier': 7.25.9
 
-  '@bigmi/core@0.0.4(bitcoinjs-lib@7.0.0-rc.0(typescript@5.7.2))(bs58@6.0.0)(viem@2.21.53(bufferutil@4.0.9)(typescript@5.7.2)(utf-8-validate@5.0.10)(zod@3.24.1))':
+  '@bigmi/core@0.0.4(bitcoinjs-lib@7.0.0-rc.0(typescript@5.7.2))(bs58@6.0.0)(viem@2.21.53(bufferutil@4.0.9)(typescript@5.7.2)(utf-8-validate@5.0.10)(zod@3.23.8))':
     dependencies:
       '@noble/hashes': 1.7.0
       bech32: 2.0.0
       bitcoinjs-lib: 7.0.0-rc.0(typescript@5.7.2)
       bs58: 6.0.0
-      viem: 2.21.53(bufferutil@4.0.9)(typescript@5.7.2)(utf-8-validate@5.0.10)(zod@3.24.1)
+      viem: 2.21.53(bufferutil@4.0.9)(typescript@5.7.2)(utf-8-validate@5.0.10)(zod@3.23.8)
 
   '@cfworker/json-schema@4.0.3': {}
 
@@ -9243,7 +9249,7 @@ snapshots:
       '@cliqz/adblocker': 1.34.0
       '@cliqz/adblocker-content': 1.34.0
       playwright: 1.48.2
-      tldts-experimental: 6.1.70
+      tldts-experimental: 6.1.71
 
   '@cliqz/adblocker@1.34.0':
     dependencies:
@@ -9254,7 +9260,7 @@ snapshots:
       '@remusao/smaz': 1.10.0
       '@types/chrome': 0.0.278
       '@types/firefox-webext-browser': 120.0.4
-      tldts-experimental: 6.1.70
+      tldts-experimental: 6.1.71
 
   '@coral-xyz/anchor-errors@0.30.1': {}
 
@@ -9584,7 +9590,7 @@ snapshots:
       - typeorm
       - vue
 
-  '@elizaos/core@0.1.7-alpha.2(@google-cloud/vertexai@1.9.2)(@langchain/core@0.3.27(openai@4.77.3(zod@3.24.1)))(axios@1.7.9)(react@18.3.1)(sswr@2.1.0(svelte@5.16.2))(svelte@5.16.2)(vue@3.5.13(typescript@5.7.2))':
+  '@elizaos/core@0.1.7-alpha.2(@google-cloud/vertexai@1.9.2)(@langchain/core@0.3.27(openai@4.77.3(zod@3.23.8)))(axios@1.7.9)(react@18.3.1)(sswr@2.1.0(svelte@5.16.2))(svelte@5.16.2)(vue@3.5.13(typescript@5.7.2))':
     dependencies:
       '@ai-sdk/anthropic': 0.0.56(zod@3.23.8)
       '@ai-sdk/google': 0.0.55(zod@3.23.8)
@@ -9603,7 +9609,7 @@ snapshots:
       handlebars: 4.7.8
       js-sha1: 0.7.0
       js-tiktoken: 1.0.15
-      langchain: 0.3.6(@langchain/core@0.3.27(openai@4.77.3(zod@3.24.1)))(axios@1.7.9)(handlebars@4.7.8)(openai@4.73.0(zod@3.23.8))
+      langchain: 0.3.6(@langchain/core@0.3.27(openai@4.77.3(zod@3.23.8)))(axios@1.7.9)(handlebars@4.7.8)(openai@4.73.0(zod@3.23.8))
       ollama-ai-provider: 0.16.1(zod@3.23.8)
       openai: 4.73.0(zod@3.23.8)
       tinyld: 1.3.4
@@ -10061,14 +10067,14 @@ snapshots:
     transitivePeerDependencies:
       - openai
 
-  '@langchain/core@0.3.27(openai@4.77.3(zod@3.24.1))':
+  '@langchain/core@0.3.27(openai@4.77.3(zod@3.23.8))':
     dependencies:
       '@cfworker/json-schema': 4.0.3
       ansi-styles: 5.2.0
       camelcase: 6.3.0
       decamelize: 1.2.0
       js-tiktoken: 1.0.16
-      langsmith: 0.2.14(openai@4.77.3(zod@3.24.1))
+      langsmith: 0.2.14(openai@4.77.3(zod@3.23.8))
       mustache: 4.2.0
       p-queue: 6.6.2
       p-retry: 4.6.2
@@ -10088,9 +10094,9 @@ snapshots:
     transitivePeerDependencies:
       - encoding
 
-  '@langchain/openai@0.3.16(@langchain/core@0.3.27(openai@4.77.3(zod@3.24.1)))':
+  '@langchain/openai@0.3.16(@langchain/core@0.3.27(openai@4.77.3(zod@3.23.8)))':
     dependencies:
-      '@langchain/core': 0.3.27(openai@4.77.3(zod@3.24.1))
+      '@langchain/core': 0.3.27(openai@4.77.3(zod@3.23.8))
       js-tiktoken: 1.0.15
       openai: 4.77.3(zod@3.23.8)
       zod: 3.23.8
@@ -10103,18 +10109,18 @@ snapshots:
       '@langchain/core': 0.3.27(openai@4.73.0(zod@3.23.8))
       js-tiktoken: 1.0.15
 
-  '@langchain/textsplitters@0.1.0(@langchain/core@0.3.27(openai@4.77.3(zod@3.24.1)))':
+  '@langchain/textsplitters@0.1.0(@langchain/core@0.3.27(openai@4.77.3(zod@3.23.8)))':
     dependencies:
-      '@langchain/core': 0.3.27(openai@4.77.3(zod@3.24.1))
+      '@langchain/core': 0.3.27(openai@4.77.3(zod@3.23.8))
       js-tiktoken: 1.0.15
 
   '@lifi/data-types@5.15.5':
     dependencies:
       '@lifi/types': 16.3.0
 
-  '@lifi/sdk@3.4.1(@solana/wallet-adapter-base@0.9.23(@solana/web3.js@1.95.8(bufferutil@4.0.9)(utf-8-validate@5.0.10)))(@solana/web3.js@1.95.8(bufferutil@4.0.9)(utf-8-validate@5.0.10))(typescript@5.7.2)(viem@2.21.53(bufferutil@4.0.9)(typescript@5.7.2)(utf-8-validate@5.0.10)(zod@3.24.1))':
+  '@lifi/sdk@3.4.1(@solana/wallet-adapter-base@0.9.23(@solana/web3.js@1.95.8(bufferutil@4.0.9)(utf-8-validate@5.0.10)))(@solana/web3.js@1.95.8(bufferutil@4.0.9)(utf-8-validate@5.0.10))(typescript@5.7.2)(viem@2.21.53(bufferutil@4.0.9)(typescript@5.7.2)(utf-8-validate@5.0.10)(zod@3.23.8))':
     dependencies:
-      '@bigmi/core': 0.0.4(bitcoinjs-lib@7.0.0-rc.0(typescript@5.7.2))(bs58@6.0.0)(viem@2.21.53(bufferutil@4.0.9)(typescript@5.7.2)(utf-8-validate@5.0.10)(zod@3.24.1))
+      '@bigmi/core': 0.0.4(bitcoinjs-lib@7.0.0-rc.0(typescript@5.7.2))(bs58@6.0.0)(viem@2.21.53(bufferutil@4.0.9)(typescript@5.7.2)(utf-8-validate@5.0.10)(zod@3.23.8))
       '@lifi/types': 16.3.0
       '@noble/curves': 1.8.0
       '@noble/hashes': 1.7.0
@@ -10123,7 +10129,7 @@ snapshots:
       bech32: 2.0.0
       bitcoinjs-lib: 7.0.0-rc.0(typescript@5.7.2)
       bs58: 6.0.0
-      viem: 2.21.53(bufferutil@4.0.9)(typescript@5.7.2)(utf-8-validate@5.0.10)(zod@3.24.1)
+      viem: 2.21.53(bufferutil@4.0.9)(typescript@5.7.2)(utf-8-validate@5.0.10)(zod@3.23.8)
     transitivePeerDependencies:
       - typescript
 
@@ -11489,6 +11495,13 @@ snapshots:
       '@tanstack/query-core': 5.60.6
       react: 18.3.1
 
+  '@tavily/core@0.0.2':
+    dependencies:
+      axios: 1.7.9
+      js-tiktoken: 1.0.16
+    transitivePeerDependencies:
+      - debug
+
   '@telegraf/types@7.1.0': {}
 
   '@tinyhttp/content-disposition@2.2.2': {}
@@ -11599,7 +11612,7 @@ snapshots:
 
   '@types/node@12.20.55': {}
 
-  '@types/node@18.19.69':
+  '@types/node@18.19.70':
     dependencies:
       undici-types: 5.26.5
 
@@ -11958,11 +11971,6 @@ snapshots:
     optionalDependencies:
       typescript: 5.7.2
       zod: 3.23.8
-
-  abitype@1.0.6(typescript@5.7.2)(zod@3.24.1):
-    optionalDependencies:
-      typescript: 5.7.2
-      zod: 3.24.1
 
   abort-controller@3.0.0:
     dependencies:
@@ -14238,11 +14246,11 @@ snapshots:
       - encoding
       - openai
 
-  langchain@0.3.6(@langchain/core@0.3.27(openai@4.77.3(zod@3.24.1)))(axios@1.7.9)(handlebars@4.7.8)(openai@4.73.0(zod@3.23.8)):
+  langchain@0.3.6(@langchain/core@0.3.27(openai@4.77.3(zod@3.23.8)))(axios@1.7.9)(handlebars@4.7.8)(openai@4.73.0(zod@3.23.8)):
     dependencies:
-      '@langchain/core': 0.3.27(openai@4.77.3(zod@3.24.1))
-      '@langchain/openai': 0.3.16(@langchain/core@0.3.27(openai@4.77.3(zod@3.24.1)))
-      '@langchain/textsplitters': 0.1.0(@langchain/core@0.3.27(openai@4.77.3(zod@3.24.1)))
+      '@langchain/core': 0.3.27(openai@4.77.3(zod@3.23.8))
+      '@langchain/openai': 0.3.16(@langchain/core@0.3.27(openai@4.77.3(zod@3.23.8)))
+      '@langchain/textsplitters': 0.1.0(@langchain/core@0.3.27(openai@4.77.3(zod@3.23.8)))
       js-tiktoken: 1.0.15
       js-yaml: 4.1.0
       jsonpointer: 5.0.1
@@ -14271,7 +14279,7 @@ snapshots:
     optionalDependencies:
       openai: 4.73.0(zod@3.23.8)
 
-  langsmith@0.2.14(openai@4.77.3(zod@3.24.1)):
+  langsmith@0.2.14(openai@4.77.3(zod@3.23.8)):
     dependencies:
       '@types/uuid': 10.0.0
       commander: 10.0.1
@@ -14280,7 +14288,7 @@ snapshots:
       semver: 7.6.3
       uuid: 10.0.0
     optionalDependencies:
-      openai: 4.77.3(zod@3.24.1)
+      openai: 4.77.3(zod@3.23.8)
 
   lazy-cache@0.2.7: {}
 
@@ -14827,7 +14835,7 @@ snapshots:
 
   openai@4.73.0(zod@3.23.8):
     dependencies:
-      '@types/node': 18.19.69
+      '@types/node': 18.19.70
       '@types/node-fetch': 2.6.12
       abort-controller: 3.0.0
       agentkeepalive: 4.6.0
@@ -14841,7 +14849,7 @@ snapshots:
 
   openai@4.77.3(zod@3.23.8):
     dependencies:
-      '@types/node': 18.19.69
+      '@types/node': 18.19.70
       '@types/node-fetch': 2.6.12
       abort-controller: 3.0.0
       agentkeepalive: 4.6.0
@@ -14852,21 +14860,6 @@ snapshots:
       zod: 3.23.8
     transitivePeerDependencies:
       - encoding
-
-  openai@4.77.3(zod@3.24.1):
-    dependencies:
-      '@types/node': 18.19.69
-      '@types/node-fetch': 2.6.12
-      abort-controller: 3.0.0
-      agentkeepalive: 4.6.0
-      form-data-encoder: 1.7.2
-      formdata-node: 4.4.1
-      node-fetch: 2.7.0
-    optionalDependencies:
-      zod: 3.24.1
-    transitivePeerDependencies:
-      - encoding
-    optional: true
 
   openapi-types@12.1.3: {}
 
@@ -14903,20 +14896,6 @@ snapshots:
       '@scure/bip32': 1.5.0
       '@scure/bip39': 1.4.0
       abitype: 1.0.6(typescript@5.7.2)(zod@3.23.8)
-      eventemitter3: 5.0.1
-    optionalDependencies:
-      typescript: 5.7.2
-    transitivePeerDependencies:
-      - zod
-
-  ox@0.1.2(typescript@5.7.2)(zod@3.24.1):
-    dependencies:
-      '@adraffy/ens-normalize': 1.11.0
-      '@noble/curves': 1.6.0
-      '@noble/hashes': 1.5.0
-      '@scure/bip32': 1.5.0
-      '@scure/bip39': 1.4.0
-      abitype: 1.0.6(typescript@5.7.2)(zod@3.24.1)
       eventemitter3: 5.0.1
     optionalDependencies:
       typescript: 5.7.2
@@ -16327,15 +16306,15 @@ snapshots:
 
   tinyspy@3.0.2: {}
 
-  tldts-core@6.1.70: {}
+  tldts-core@6.1.71: {}
 
-  tldts-experimental@6.1.70:
+  tldts-experimental@6.1.71:
     dependencies:
-      tldts-core: 6.1.70
+      tldts-core: 6.1.71
 
-  tldts@6.1.70:
+  tldts@6.1.71:
     dependencies:
-      tldts-core: 6.1.70
+      tldts-core: 6.1.71
 
   to-regex-range@5.0.1:
     dependencies:
@@ -16347,7 +16326,7 @@ snapshots:
 
   together-ai@0.7.0:
     dependencies:
-      '@types/node': 18.19.69
+      '@types/node': 18.19.70
       '@types/node-fetch': 2.6.12
       abort-controller: 3.0.0
       agentkeepalive: 4.6.0
@@ -16375,7 +16354,7 @@ snapshots:
 
   tough-cookie@5.0.0:
     dependencies:
-      tldts: 6.1.70
+      tldts: 6.1.71
 
   tr46@0.0.3: {}
 
@@ -16677,24 +16656,6 @@ snapshots:
       abitype: 1.0.6(typescript@5.7.2)(zod@3.23.8)
       isows: 1.0.6(ws@8.18.0(bufferutil@4.0.9)(utf-8-validate@5.0.10))
       ox: 0.1.2(typescript@5.7.2)(zod@3.23.8)
-      webauthn-p256: 0.0.10
-      ws: 8.18.0(bufferutil@4.0.9)(utf-8-validate@5.0.10)
-    optionalDependencies:
-      typescript: 5.7.2
-    transitivePeerDependencies:
-      - bufferutil
-      - utf-8-validate
-      - zod
-
-  viem@2.21.53(bufferutil@4.0.9)(typescript@5.7.2)(utf-8-validate@5.0.10)(zod@3.24.1):
-    dependencies:
-      '@noble/curves': 1.6.0
-      '@noble/hashes': 1.5.0
-      '@scure/bip32': 1.5.0
-      '@scure/bip39': 1.4.0
-      abitype: 1.0.6(typescript@5.7.2)(zod@3.24.1)
-      isows: 1.0.6(ws@8.18.0(bufferutil@4.0.9)(utf-8-validate@5.0.10))
-      ox: 0.1.2(typescript@5.7.2)(zod@3.24.1)
       webauthn-p256: 0.0.10
       ws: 8.18.0(bufferutil@4.0.9)(utf-8-validate@5.0.10)
     optionalDependencies:
